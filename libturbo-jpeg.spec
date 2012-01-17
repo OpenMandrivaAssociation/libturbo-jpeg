@@ -1,6 +1,6 @@
 %define name    libturbo-jpeg
 %define version 1.1.90
-%define release 1
+%define release 2
 
 %define libname %mklibname jpeg-turbo
 %define develname %mklibname -d -s jpeg-turbo
