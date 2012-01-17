@@ -28,7 +28,7 @@ Summary:        A derivative of libjpeg that uses SIMD instructions
 Group:          System/Libraries
 
 Requires: libjpeg62
-BuildRequires: cmake gcc-c++ glibc-devel jpeg-devel X11-devel
+BuildRequires: cmake gcc-c++ glibc-devel jpeg-devel X11-devel nasm
 Provides: libjpeg-turbo = %{version}-%{release}
 
 %package -n %develname
