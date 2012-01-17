@@ -27,9 +27,11 @@ the files required for linking are not included in libjpeg.
 Summary:        A derivative of libjpeg that uses SIMD instructions
 Group:          System/Libraries
 
-Requires: libjpeg62
+Requires: %{_lib}jpeg62
 BuildRequires: cmake gcc-c++ glibc-devel jpeg-devel X11-devel nasm
-Provides: libjpeg-turbo = %{version}-%{release}
+Provides: libjpeg-turbo = %{EVRD}
+Provides: turbojpeg = %{EVRD}
+Provides: jpeg-turbo = %{EVRD}	
 
 %package -n %develname
 Summary:        A derivative of libjpeg that uses SIMD instructions
@@ -38,6 +40,7 @@ Group:          System/Libraries
 Requires:	%{libname} >= %{EVRD} jpeg-devel
 Provides:	turbojpeg-devel = %{EVRD}
 Provides:	libturbojpeg-devel = %{EVRD}
+Provides:	jpeg-turbo = %{EVRD}
 
 %description -n %libname
 This package contains the library needed to run programs dynamically
